@@ -44,7 +44,7 @@ export const Product = (props) => {
         {costInCredits ? `Cost: ${splitCostWithSpaces(costInCredits)}` : 'Not available to buy'}
       </ProductCostWrapper>
 
-      {costInCredits ? <ProductForm /> : null}
+      {costInCredits ? <ProductForm productId={id} /> : null}
 
     </ProductWrapper>
   )
