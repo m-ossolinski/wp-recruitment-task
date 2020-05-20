@@ -5,9 +5,8 @@ export const ProductWrapper = styled.div`
   margin: 6px;
   padding: 6px;
   height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 45px auto 25px 35px;
 `;
 
 export const ProductName = styled.p`
@@ -40,4 +39,9 @@ export const ProductCostWrapper = styled.span`
   width: 100%;
   display: block;
   text-align: right;
+`;
+
+export const ProductFormWrapper = styled.div`
+  margin-top: 6px;
+  background: red;
 `;

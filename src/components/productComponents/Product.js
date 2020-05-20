@@ -6,10 +6,14 @@ import {
   ProductManufacturersWrapper,
   ManufacturersTitleWrapper,
   ProductCostWrapper,
-} from "./productStyle";
+} from './productStyle';
+import { ProductForm } from './ProductForm';
 
+const splitCostWithSpaces = (cost) =>
+  cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
 export const Product = (props) => {
+
   const {
     productData: {
       name,
@@ -37,9 +41,10 @@ export const Product = (props) => {
       </ProductManufacturersWrapper>
 
       <ProductCostWrapper>
-        {costInCredits ? `Cost: ${costInCredits}` : 'Not available to buy'}
+        {costInCredits ? `Cost: ${splitCostWithSpaces(costInCredits)}` : 'Not available to buy'}
       </ProductCostWrapper>
 
+      {costInCredits ? <ProductForm /> : null}
 
     </ProductWrapper>
   )
