@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import { ProductFormWrapper } from './productStyle';
+import { ProductFormWrapper, SubmitButton } from './productStyle';
 import { CartContext } from 'contexts/CartContext';
 
 export const ProductForm = () => {
@@ -14,15 +14,16 @@ export const ProductForm = () => {
 
   return (
     <ProductFormWrapper>
-      <form onSubmit={ev => addToCart(ev)}>
+      <form className="product-form" onSubmit={ev => addToCart(ev)}>
         <input
           type="number"
           placeholder="Starship amount"
           name="amount"
           value={starshipAmount}
           onChange={e => setStarshipAmount(e.target.value)}
+          min="1"
         />
-        <input type="submit" value="Add to cart"/>
+        <SubmitButton type="submit" value="Add to cart" />
       </form>
     </ProductFormWrapper>
   )

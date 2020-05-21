@@ -1,20 +1,23 @@
 import styled from 'styled-components';
 
 export const ProductWrapper = styled.div`
-  background-color: #fff;
-  margin: 6px;
+  background-color: #7e7863;
+  box-shadow: 0px 0px 15px 1px rgba(0,100,255,0.8);
+  border-radius: 4px;
+  margin: 14px;
   padding: 6px;
-  height: 250px;
+  height: 300px;
   display: grid;
-  grid-template-rows: 45px auto 25px 35px;
+  grid-template-rows: auto 1fr 25px 35px;
 `;
 
 export const ProductName = styled.p`
+  font-family: 'Star Jedi', arial;
   text-align: center;
   margin: 4px;
   font-size: 20px;
   padding: 4px;
-  background-color: #8f6675;
+  background-color: #656565;
   color: #fff;
 `;
 
@@ -30,18 +33,27 @@ export const ManufacturersTitleWrapper = styled.p`
 `;
 
 export const ProductManufacturerName = styled.span`
-  background-color: #a097ae;
+  background-color: #B0B0B0;
   margin: 4px 2px;
 `;
 
 export const ProductCostWrapper = styled.span`
-  background: #dcf9f4;
+  background: #a5c2bd;
   width: 100%;
   display: block;
   text-align: right;
 `;
 
 export const ProductFormWrapper = styled.div`
-  margin-top: 6px;
-  background: red;
+  .product-form {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
+export const SubmitButton = styled.input`
+  background: darkgreen;
+  color: #fff;
+  border: none;
 `;
