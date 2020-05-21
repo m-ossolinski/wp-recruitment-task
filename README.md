@@ -1,5 +1,7 @@
 This project was created for the recruitment task for Wirtualna Polska Media.
 
+Live app is available here: [https://m-ossolinski.github.io/wp-recruitment-task/].
+
 # About project
 
 Project display products fetched from Star Wars API.
