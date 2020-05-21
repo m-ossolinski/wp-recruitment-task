@@ -33,10 +33,10 @@ It provides two elements `cartAmount` and `addItemToCart`.
 
 App components are divided to four groups.
 
-`containers` - app wrappers that contains `AppHeader` and `AppLayout`
-`pages` - it contains ShopPage which is main page in the app
-`productComponents` - it has few components which together create products list
-`cartComponents` - it has only one components which display cart items amount
+`containers` - app wrappers that contains `AppHeader` and `AppLayout`\
+`pages` - it contains ShopPage which is main page in the app\
+`productComponents` - it has few components which together create products list\
+`cartComponents` - it has only one components which display cart items amount\
 
 
 ## Technologies
