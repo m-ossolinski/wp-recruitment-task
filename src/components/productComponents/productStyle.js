@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import shipImage from 'assets/ship.png';
 
 export const ProductWrapper = styled.div`
-  background-color: #7e7863;
+  background-color: #e9e3ce;
   box-shadow: 0px 0px 15px 1px rgba(0,100,255,0.8);
   border-radius: 4px;
   margin: 14px;
