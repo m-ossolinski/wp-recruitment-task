@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Product } from 'components/productComponents';
 import { useFetchData } from 'hooks/useFetchData';
 import { SWAPI_STARSHIPS_QUERY } from 'apiUtils';
+import { DataLoader, LoaderWrapper } from './productStyle';
 
 export const ProductsList = () => {
   const { data, dataLoading, dataLoadingError } = useFetchData(SWAPI_STARSHIPS_QUERY);
@@ -17,14 +18,16 @@ export const ProductsList = () => {
   return (
     <div>
       {dataLoading ? (
-        <div>Loading data...</div>
+        <LoaderWrapper>
+          <DataLoader />
+        </LoaderWrapper>
       ) : (
         <PokemonListWrapper>
           {data && data.allStarships
           && data.allStarships.edges
             .map(({ node: productData }) => (
               <Product
-                key={productData.id}
+                key={productData.name}
                 productData={productData}
               />
             ))}

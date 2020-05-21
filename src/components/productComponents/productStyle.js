@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import shipImage from 'assets/ship.png';
 
 export const ProductWrapper = styled.div`
   background-color: #7e7863;
@@ -52,8 +53,35 @@ export const ProductFormWrapper = styled.div`
   }
 `;
 
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const DataLoader = styled.div`
+  width: 150px;
+  height: 100px;
+  animation: ${rotate} 2s linear infinite;
+  background: url(${shipImage});
+  background-repeat: no-repeat;
+  padding: 70px;
+`;
+
 export const SubmitButton = styled.input`
   background: darkgreen;
   color: #fff;
   border: none;
+`;
+
+export const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
 `;

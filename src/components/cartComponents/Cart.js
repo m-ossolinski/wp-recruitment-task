@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { ReactSVG } from 'react-svg'
 import { CartContext } from 'contexts/CartContext';
-import cartIcon from 'cartIcon.svg';
+import cartIcon from 'assets/cartIcon.svg';
 
 export const Cart = () => {
   const { cartAmount } = useContext(CartContext)

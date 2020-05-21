@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import bgImg from 'sw-bg.jpg'
+import bgImg from 'assets/sw-bg.jpg'
 import { AppHeader } from './AppHeader';
 
 const LayoutWrapper = styled.main`
   display: grid;
   grid-template-rows: 80px auto;
   background-image: url(${bgImg});
+  min-height: 100vh;
 `;
 
 const LayoutSectionWrapper = styled.section`
@@ -24,4 +26,8 @@ export const AppLayout = (props) => {
       </LayoutSectionWrapper>
     </LayoutWrapper>
   )
+}
+
+AppLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 }

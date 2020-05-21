@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ProductManufacturerName } from './productStyle'
 
 export const ProductManufacturer = (props) => {
@@ -7,4 +8,8 @@ export const ProductManufacturer = (props) => {
   return (
     <ProductManufacturerName>{manufacturer}</ProductManufacturerName>
   )
+}
+
+ProductManufacturer.propTypes = {
+  manufacturer: PropTypes.string.isRequired,
 }

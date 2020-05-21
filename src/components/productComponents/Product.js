@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import uuid from 'react-uuid'
 import { ProductManufacturer } from 'components/productComponents';
 import {
   ProductName,
@@ -35,7 +37,10 @@ export const Product = (props) => {
         </ManufacturersTitleWrapper>
 
         {manufacturers.map(manufacturer => (
-          <ProductManufacturer manufacturer={manufacturer} />
+          <ProductManufacturer
+            key={id + uuid()}
+            manufacturer={manufacturer}
+          />
         ))}
 
       </ProductManufacturersWrapper>
@@ -44,8 +49,23 @@ export const Product = (props) => {
         {costInCredits ? `Cost: ₹${splitCostWithSpaces(costInCredits)}` : 'Not available to buy'}
       </ProductCostWrapper>
 
-      {costInCredits ? <ProductForm productId={id} /> : null}
+      {costInCredits ? <ProductForm /> : null}
 
     </ProductWrapper>
   )
+}
+
+Product.propTypes = {
+  productData: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    manufacturers: PropTypes.arrayOf(PropTypes.string).isRequired,
+    costInCredits: PropTypes.number,
+  }),
+}
+
+Product.defaultProps = {
+  productData: {
+    costInCredits: null,
+  }
 }
