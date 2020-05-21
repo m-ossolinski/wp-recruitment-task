@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/wp-recruitment-task/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/wp-recruitment-task/static/js/main.8e7e76d1.chunk.js",
+    "main.js.map": "/wp-recruitment-task/static/js/main.8e7e76d1.chunk.js.map",
+    "runtime-main.js": "/wp-recruitment-task/static/js/runtime-main.f0899697.js",
+    "runtime-main.js.map": "/wp-recruitment-task/static/js/runtime-main.f0899697.js.map",
+    "static/js/2.fde52ffe.chunk.js": "/wp-recruitment-task/static/js/2.fde52ffe.chunk.js",
+    "static/js/2.fde52ffe.chunk.js.map": "/wp-recruitment-task/static/js/2.fde52ffe.chunk.js.map",
+    "index.html": "/wp-recruitment-task/index.html",
+    "precache-manifest.5b3b2271824f628a244d96c1e61dd991.js": "/wp-recruitment-task/precache-manifest.5b3b2271824f628a244d96c1e61dd991.js",
+    "service-worker.js": "/wp-recruitment-task/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/wp-recruitment-task/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.fde52ffe.chunk.js.LICENSE.txt": "/wp-recruitment-task/static/js/2.fde52ffe.chunk.js.LICENSE.txt",
+    "static/media/cartIcon.svg": "/wp-recruitment-task/static/media/cartIcon.9f6dd2df.svg",
+    "static/media/sw-bg.jpg": "/wp-recruitment-task/static/media/sw-bg.c53ebe46.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0899697.js",
+    "static/js/2.fde52ffe.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.8e7e76d1.chunk.js"
+  ]
+}
