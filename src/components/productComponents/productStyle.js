@@ -72,10 +72,22 @@ export const DataLoader = styled.div`
   padding: 70px;
 `;
 
-export const SubmitButton = styled.input`
+export const SubmitButton = styled.button`
   background: darkgreen;
   color: #fff;
   border: none;
+  cursor: pointer;
+  transition: .2s ease;
+  
+  &:hover {
+    background: lightgreen;
+    color: #000;
+  }
+  
+  &:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+  }
 `;
 
 export const LoaderWrapper = styled.div`

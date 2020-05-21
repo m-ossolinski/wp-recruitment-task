@@ -10,6 +10,7 @@ export const ProductForm = () => {
   const addToCart = ev => {
     ev.preventDefault();
     addItemToCart(parseInt(starshipAmount, 10))
+    setStarshipAmount("");
   }
 
   return (
@@ -23,7 +24,12 @@ export const ProductForm = () => {
           onChange={e => setStarshipAmount(e.target.value)}
           min="1"
         />
-        <SubmitButton type="submit" value="Add to cart" />
+        <SubmitButton
+          value="Add to cart"
+          disabled={!starshipAmount}
+        >
+          Add to cart
+        </SubmitButton>
       </form>
     </ProductFormWrapper>
   )
